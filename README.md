@@ -1,20 +1,36 @@
 <div align="center">
   <img height="80" alt="icon" src="https://github.com/vague-theme/vague/blob/main/assets/icon.png?raw=true" />
-  <h1>Vague for App</h1>
-  <!-- Optional: add a preview screenshot here
-  Use user-attachments instead of the assets/ folder to keep the repo minimal.
-  Example:
-  <img src="https://github.com/user-attachments/assets/..." alt="Preview" />
-  Note: make sure to adjust image size if applicable
-  -->
+  <h1>Vague for GTK</h1>
+  <img width="1920" height="1080" alt="Preview" src="https://github.com/user-attachments/assets/10bc1298-15d9-47e5-bd35-f2d3d9aa8796" />
 </div>
 
 ## Usage
 
-1. Open App
-2. Under settings, import `vague.theme`
-3. Select `Vague` from the themes dropdown
+Git clone the repo and paste the theme's folder into your `~/.themes` directory:
 
-## Thanks to contributors
+```bash
+git clone https://github.com/vague-theme/vague-gtk.git
+cd vague-gtk
+cp -r Vague ~/.themes
+```
 
-- [You, it's you!](https://github.com/<username>)
+If `~/.themes` is missing, you can make one:
+
+```bash
+cd
+mkdir .themes
+```
+
+### GTK 4.0 fix
+
+Symlink to dark to make sure you get the dark mode:
+
+```bash
+ln -sf ~/.themes/Vague/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk.css
+```
+
+### Switching to theme
+
+You can use the following tools to switch to the theme:
+  - Wayland: `nwg-look`
+  - Xorg: `lxappearance`
