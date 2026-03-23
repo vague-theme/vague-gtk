@@ -6,31 +6,37 @@
 
 ## Usage
 
-Git clone the repo and paste the theme's folder into your `~/.themes` directory:
+Clone the repo and copy the theme into `~/.themes`:
 
 ```bash
 git clone https://github.com/vague-theme/vague-gtk.git
-cd vague-gtk
-cp -r Vague ~/.themes
+mkdir -p ~/.themes
+cp -r vague-gtk/Vague ~/.themes
 ```
 
-If `~/.themes` is missing, you can make one:
+## Switching themes
+
+### CLI
 
 ```bash
-cd
-mkdir .themes
+# GTK
+THEME_DIR="$HOME/.themes/Vague"
+mkdir -p ~/.config/gtk-4.0 ~/.config/gtk-3.0 ~/.config/gtk-2.0
+ln -sf "$THEME_DIR/gtk-4.0/gtk.css" ~/.config/gtk-4.0/gtk.css
+ln -sf "$THEME_DIR/gtk-3.0/gtk.css" ~/.config/gtk-3.0/gtk.css
+ln -sf "$THEME_DIR/gtk-2.0/main.rc"  ~/.config/gtk-2.0/main.rc
+ln -sf "$THEME_DIR/gtk-2.0/apps.rc"  ~/.config/gtk-2.0/apps.rc
+ln -sf "$THEME_DIR/gtk-2.0/hacks.rc" ~/.config/gtk-2.0/hacks.rc
+
+# Desktop Environments
+gsettings set org.gnome.desktop.interface gtk-theme "Vague"
+gsettings set org.cinnamon.theme name "Vague"
+xfconf-query -c xfwm4 -p /general/theme -s "Vague" # XFCE window decorations
 ```
 
-### GTK 4.0 fix
+### GUI
 
-Symlink to dark to make sure you get the dark mode:
+The following tools handle everything, no CLI needed:
 
-```bash
-ln -sf ~/.themes/Vague/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk.css
-```
-
-### Switching to theme
-
-You can use the following tools to switch to the theme:
-  - Wayland: `nwg-look`
-  - Xorg: `lxappearance`
+- Wayland: `nwg-look`
+- Xorg: `lxappearance`
