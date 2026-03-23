@@ -21,16 +21,16 @@ cd
 mkdir .themes
 ```
 
-### GTK 4.0 fix
-
-Symlink to dark to make sure you get the dark mode:
-
-```bash
-ln -sf ~/.themes/Vague/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk.css
-```
-
 ### Switching to theme
 
 You can use the following tools to switch to the theme:
   - Wayland: `nwg-look`
   - Xorg: `lxappearance`
+
+#### GTK 4.0 fix
+
+After switching, symlink to dark to make sure you get the dark mode:
+
+```bash
+ln -sf ~/.themes/Vague/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk.css
+```
