@@ -4811,7 +4811,7 @@ shortcut > .keycap, .card {
   background-color: @card_bg_color;
   color: @card_fg_color;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px rgba(232, 232, 238, 0.12);
+  box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.12);
 }
 
 .osd shortcut > .keycap, shortcut > .osd.keycap, .osd .card, .card.osd {
@@ -8336,7 +8336,7 @@ menubutton stack > box {
 
 .running-stopwatch .seconds-label,
 .running-stopwatch .miliseconds-label {
-  color: #8caaee;
+  color: #7e98e8;
 }
 
 .stopped-stopwatch .miliseconds-label,
@@ -8370,7 +8370,7 @@ menubutton stack > box {
 
 .night .clock-time {
   color: #7e98e8;
-  background-color: alpha(#8caaee,0.25);
+  background-color: alpha(#7e98e8,0.25);
 }
 
 .naut .clock-time,
@@ -8973,7 +8973,7 @@ star-image {
 }
 
 .upgrade-banner-background {
-  background: linear-gradient(to bottom, #a6d189, #8caaee);
+  background: linear-gradient(to bottom, #a6d189, #7e98e8);
   color: white;
 }
 
@@ -9117,8 +9117,8 @@ carousel.card {
 }
 
 .context-tile-lozenge.blue, .context-tile-lozenge.details-rating-5 {
-  color: #8caaee;
-  background-color: alpha(#8caaee,0.15);
+  color: #7e98e8;
+  background-color: alpha(#7e98e8,0.15);
 }
 
 .context-tile-lozenge.yellow, .context-tile-lozenge.details-rating-12 {
@@ -9634,9 +9634,9 @@ window#desktopwindow.background {
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
-@define-color accent_bg_color #8caaee;
+@define-color accent_bg_color #7e98e8;
 @define-color accent_fg_color rgba(20, 20, 21, 0.87);
-@define-color accent_color #8caaee;
+@define-color accent_color #7e98e8;
 @define-color destructive_bg_color #ea999c;
 @define-color destructive_fg_color rgba(20, 20, 21, 0.87);
 @define-color destructive_color #ea999c;
@@ -9650,35 +9650,35 @@ window#desktopwindow.background {
 @define-color error_fg_color rgba(20, 20, 21, 0.87);
 @define-color error_color #ea999c;
 @define-color window_bg_color #171718;
-@define-color window_fg_color #e8e8ee;
+@define-color window_fg_color #cdcdcd;
 @define-color view_bg_color #171718;
-@define-color view_fg_color #e8e8ee;
+@define-color view_fg_color #cdcdcd;
 @define-color headerbar_bg_color #171718;
-@define-color headerbar_fg_color #e8e8ee;
-@define-color headerbar_border_color #e8e8ee;
+@define-color headerbar_fg_color #cdcdcd;
+@define-color headerbar_border_color #cdcdcd;
 @define-color headerbar_backdrop_color #161617;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
 @define-color headerbar_darker_shade_color rgba(20, 20, 21, 0.75);
 @define-color sidebar_bg_color #161617;
-@define-color sidebar_fg_color #e8e8ee;
+@define-color sidebar_fg_color #cdcdcd;
 @define-color sidebar_backdrop_color #171718;
 @define-color sidebar_shade_color rgba(0, 0, 0, 0.25);
-@define-color sidebar_border_color rgba(232, 232, 238, 0.08);
+@define-color sidebar_border_color rgba(205, 205, 205, 0.08);
 @define-color secondary_sidebar_bg_color #171718;
-@define-color secondary_sidebar_fg_color #e8e8ee;
+@define-color secondary_sidebar_fg_color #cdcdcd;
 @define-color secondary_sidebar_backdrop_color #171718;
 @define-color secondary_sidebar_shade_color rgba(0, 0, 0, 0.25);
-@define-color secondary_sidebar_border_color rgba(232, 232, 238, 0.12);
-@define-color card_bg_color rgba(232, 232, 238, 0.04);
-@define-color card_fg_color #e8e8ee;
+@define-color secondary_sidebar_border_color rgba(205, 205, 205, 0.12);
+@define-color card_bg_color rgba(205, 205, 205, 0.04);
+@define-color card_fg_color #cdcdcd;
 @define-color card_shade_color rgba(0, 0, 0, 0.36);
 @define-color dialog_bg_color #161617;
-@define-color dialog_fg_color #e8e8ee;
+@define-color dialog_fg_color #cdcdcd;
 @define-color popover_bg_color #171718;
-@define-color popover_fg_color #e8e8ee;
+@define-color popover_fg_color #cdcdcd;
 @define-color popover_shade_color rgba(0, 0, 0, 0.25);
 @define-color thumbnail_bg_color #17171c;
-@define-color thumbnail_fg_color #e8e8ee;
+@define-color thumbnail_fg_color #cdcdcd;
 @define-color shade_color rgba(0, 0, 0, 0.25);
 @define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
 /* Public colors from Default */

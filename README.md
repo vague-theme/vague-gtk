@@ -1,8 +1,9 @@
 <div align="center">
   <img height="80" alt="icon" src="https://github.com/vague-theme/vague/blob/main/assets/icon.png?raw=true" />
   <h1>Vague for GTK</h1>
-  <img width="1920" height="1080" alt="Preview" src="https://github.com/user-attachments/assets/10bc1298-15d9-47e5-bd35-f2d3d9aa8796" />
 </div>
+
+![vague-gtk preview](./images/preview.png)
 
 ## Usage
 
